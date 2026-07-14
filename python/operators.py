@@ -15,11 +15,12 @@ b=20
 c=a+b
 print(c)
 print("Addition ",15+20)
-print("Sub ",155-20)
-print("Mul ",15*20)
-print("Div",21/2)
-print("Div",21//2)
-print("Mod", 21%2)
+print("Subtraction",155-20)
+print("Multiplication ",15*20)
+print("Division",21/2)
+print("Floor Division",21//2)
+print("Modulus", 21%2)
+print("Exponential", 2**3)
 
 2. Assigment Operator
 ----------------------
