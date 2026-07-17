@@ -3,8 +3,8 @@
 3. Comparision Operator (==,>,<.>=,<=,!=)
 4. Logical Operator (and or not)
 5. Bitwise Operator (&,|,~,^, >> , <<)
-6. Membership Operator 
-7. Identity Operator
+6. Membership Operator (in,not in)
+7. Identity Operator (is, is not)
 
 
 Arithmetic Operator:
@@ -105,3 +105,39 @@ print(a>>2)
 print(a<<2)
 # 00    1000
 
+# 6. Membership Operator 
+# ----------------------
+
+# in, not in
+
+a=[1,2,3,4,5]
+
+print( 3  in a)
+print( 3 not in a)
+print( 7  in a)
+print( 7 not in a)
+
+
+# 7. Identity Operator
+
+# is, is not 
+
+a=10
+b=20 
+print(id(a))
+print(id(b))
+print(a is b)
+
+a=[1,2,3,4]
+b=[1,2,3,4,5]
+print(id(a))
+print(id(b))
+print(a is b)
+
+
+a=(1,2,3,4)
+b=(1,2,3,4)
+print(id(a))
+print(id(b))
+print(a is b)
+print(a is not b)
