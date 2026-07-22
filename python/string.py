@@ -50,3 +50,10 @@ else:
 
 a="Hello "*5
 print(a)
+
+
+a=["f","l","o","w","e","r"]
+print(''.join(a))
+
+a="i am Learning python"
+print(a.split(' '))
