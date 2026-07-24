@@ -165,3 +165,21 @@ print({i*i for i in a if i%2!=0})
 # Fibonacci series 0 1 1 2 3 5 
 # Factorial 5
 # number Reverse without Built in  using for loop
+
+a=str(531)
+print(a[::-1])
+
+
+# break // Exit from Loop
+# continue // Skip the current Iteration
+# pass // To skip Error
+
+for i in range(1,11):
+    if i==5:
+        break
+    print(i)
+
+for i in range(1,11):
+    if i==5:
+        continue
+    print(i)
