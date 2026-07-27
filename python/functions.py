@@ -195,8 +195,37 @@ print(calculate(50,2,"div"))
 
 # lambda:
 # Anonymous Function 
-# single line Expression
+# singleline Expression
 # accept multiple parameter but return single Expression    
 
 z=lambda a,b,c: print(a+b+c)
-z(10,20,30)
+z(10,20,30) 
+
+# 1. map
+# 2. filter
+# 3. reduce  
+
+
+# map : return new list
+
+a=[1,2,3,4,5]
+print(list(map(lambda i: i*2,a)))
+print(list(filter(lambda i: i%2==0,a)))
+
+from functools import reduce 
+print(reduce(lambda a,c:a+c,a))
+
+# Generator:
+# ---------
+
+def display():
+    yield 1
+    yield 2
+    yield 3
+
+a=display()
+print(next(a))
+print(next(a))
+
+
+

@@ -183,3 +183,12 @@ for i in range(1,11):
     if i==5:
         continue
     print(i)
+
+a=[1,4,6,9,10]
+b=[]
+n=a[-1]
+print(n)
+for i in range(1,n+1):
+    if i not in a:
+        b.append(i)
+print(b)
