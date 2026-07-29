@@ -192,3 +192,13 @@ for i in range(1,n+1):
     if i not in a:
         b.append(i)
 print(b)
+
+
+a=[1,3,5,7,10]
+b=[]
+for i in range(1,11):
+    if i not in a:
+        b.append(i)
+print(b)
+
+
