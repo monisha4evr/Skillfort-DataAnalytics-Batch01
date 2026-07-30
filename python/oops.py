@@ -2,8 +2,18 @@
 
 # class : Blue print
 # object : instance of class 
+
+# in Class
 # variable : (attribute)
 # function(method)
+
+# Constructor 
+# its Called Automatically while object is created
+# keyword: __init__
+# variable Initialize
+
+# destructor:
+# __del__()
 
 # class Classname:
 #     def methodname():
@@ -153,5 +163,144 @@ class Son(Parent):
 s=Son()
 s.son_display()
 s.display()
+
+
+#Encapsulation
+# Bind Data Eg:Class 
+# Security 
+# public 
+# protected (_)
+# private (__)
+# NameMangling
+
+class Userprofile:
+    def __init__(self,username,mobile,password):
+        self.username=username
+        self._mobile=mobile
+        self.__password=password 
+
+    def get_pwd(self):
+        print(self.__password)
+
+    def set_pwd(self,newpassword):
+        self.__password=newpassword
+
+
+u=Userprofile("vanu",122334,"ad@123")
+print(u.username)
+print(u._mobile)
+u.get_pwd()
+u.set_pwd("vanu@123")
+u.get_pwd()
+print(u._Userprofile__password)
+
+# polymorphism
+# 1. Overloading 
+# 2. Overriding
+
+
+class Demo:
+    def add(self,a,b,c=0,d=None,*e):
+        print(e)
+        if d:
+            print(a+b+c+d)
+        else:
+            print(a+b+c)
+
+d=Demo()
+d.add(5,5)
+d.add(5,5,1)
+d.add(5,5,1,2)
+d.add(5,5,1,2,4,6,7,8,7)
+
+#overriding:
+# parent and child class
+# parent class method replaced by Child Class
+
+class Animal:
+    def sound(self):
+        print("Animals make Sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog Barks.......")
+d=Dog()
+d.sound()
+
+# using Super()
+class Animal:
+    def __init__(self):
+        print("Animals make Sound")
+
+class Dog(Animal):
+    def __init__(self):
+        super().__init__()
+        print("Dog Barks.......")
+d=Dog()
+
+# Abstraction
+# hiding unnecessary implementation 
+# showing Neccessary code 
+
+from abc import ABC,abstractmethod
+class Calculation(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+    def display(self):
+        print("Displayeed")
+
+class Triangle(Calculation):
+    def area(self):
+        print("area")
+
+    def display_triangle(self):
+        print("I am triangle")
+
+t=Triangle()
+t.display_triangle()
+t.area()
+
+
+class Grandparent:
+    def __init__(self):
+        print("Grand Parent")
+
+class Father(Grandparent):
+    def __init__(self):
+        super().__init__()
+        print("Father")
+
+class Mother(Grandparent):
+    def __init__(self):
+        super().__init__()
+        print("Mother")
+
+class Child(Grandparent):
+    def __init__(self):
+        super().__init__()
+        print("I am child")
+
+c=Child()
+print(Child.__mro__)
+
+
+class Grandparent:
+    def __init__(self):
+        print("Grand Parent")
+
+class Father(Grandparent):
+    def __init__(self):
+        print("Father")
+
+class Mother(Father):
+    def __init__(self):
+        print("Mother")
+
+m=Mother()
+
+
+
+
 
 

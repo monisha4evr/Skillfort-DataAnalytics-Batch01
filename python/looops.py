@@ -201,4 +201,6 @@ for i in range(1,11):
         b.append(i)
 print(b)
 
+a=[1,2,3,1,2,5,3,1]
+
 
