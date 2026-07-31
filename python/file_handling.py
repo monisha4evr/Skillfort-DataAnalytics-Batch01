@@ -1,7 +1,7 @@
 # mode 
 # 1. read = 'r'
-# 2. append = 'a'
-# 3. write = 'w'
+# 2. append = 'a' append with exsiting Content
+# 3. write = 'w' -> Replace with new
 
 
 
@@ -21,9 +21,9 @@ file.close()
 
 
 # read:
-# 1. read()
-# 2. readline()
-# 3. readlines()
+# 1. read() --> Read full file
+# 2. readline() --> Read first line only
+# 3. readlines() --> Read all and convert into list
 
 file=open("suji.txt",'r')
 print(file.read())

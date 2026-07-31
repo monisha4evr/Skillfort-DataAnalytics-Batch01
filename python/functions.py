@@ -228,4 +228,30 @@ print(next(a))
 print(next(a))
 
 
+def fact(n):
+    if n==1:
+        return 1
+    return n*fact(n-1);
+print(fact(5))
+
+def fibbo(n):
+   a,b=0,1
+   for _ in range(n):
+       print(a,end=" ")
+       a,b=b,a+b
+fibbo(5)
+
+def anagrm(a,b):
+    if len(a)!=len(b):
+        return False
+    return sorted(a) == sorted(b)
+
+res=anagrm("silent","listen")
+if res:
+    print("Anagram")
+else :
+    print("nope")
+
+
+
 

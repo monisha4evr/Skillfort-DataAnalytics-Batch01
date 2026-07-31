@@ -201,6 +201,13 @@ for i in range(1,11):
         b.append(i)
 print(b)
 
-a=[1,2,3,1,2,5,3,1]
+day=0
+match day:
+    case 0:
+        print("Sunday")
+    case 1:
+        print("Monday")
+    case _:
+        print("No")
 
 
