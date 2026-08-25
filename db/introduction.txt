@@ -1,0 +1,86 @@
+
+
+Database:
+    A database is an organized collection of data stored electronically 
+    so it can be easily accessed, managed, and updated.
+Spreadsheet:
+    Spreadsheets are for small, single-user, simple data. 
+    Databases are for large, multi-user, connected, and rule-enforced data.
+    a) Multiple users problem
+    b) Data duplication problem
+    c) Data integrity problem 
+    d) Size and speed
+
+
+DBMS (Database Management System)
+---------------------------------
+Software that lets you create, read, update, delete, and manage data
+Definition: "A DBMS is a program that sits between the user and the actual data, so users don't have to deal with raw files."
+Examples: File-based systems, MS Access, even simple systems like older DBMS models (hierarchical, network)
+
+
+                    DBMS
+                     │
+          ┌──────────┴──────────┐
+          ↓                     ↓
+       RDBMS                   NoSQL
+          ↓                     ↓
+    PostgreSQL                MongoDB
+          ↓
+   Database Server
+          ↓
+      Cloud / Local
+
+1. Relational Database Server (RDBMS)
+    Data tables + relationships format-la store pannum.
+2. NoSQL Database Server
+    Document  → MongoDB
+    Key-Value → Redis
+    Graph     → Neo4j
+    Wide-column → Cassandra
+
+
+
+
+RDBMS (Relational Database Management System)
+---------------------------------------------
+A type of DBMS where data is stored in tables (relations) that can be linked to each other
+"Relational" = tables relate to one another via keys (we'll cover this in Step 7 — Joins)
+Examples: PostgreSQL, MySQL, Oracle, SQL Server
+
+
+DBMS (general term)
+   └── RDBMS (relational — uses tables + relationships)
+          └── PostgreSQL, MySQL, Oracle, SQL Server
+
+
+SQL stands for Structured Query Language.
+
+SQL is a language used to communicate with a database
+We use SQL to:
+
+    Create tables
+    Insert data
+    Read data
+    Update data
+    Delete data
+
+Category	Purpose	Examples
+DDL	Structure	CREATE, ALTER, DROP
+DML	Data modification	INSERT, UPDATE, DELETE
+DQL	Data retrieval	SELECT
+DCL	Permissions	GRANT, REVOKE
+TCL	Transactions	COMMIT, ROLLBACK
+
+
+What is PostgreSQL?
+
+A free, open-source RDBMS — one of the most powerful and widely used databases in the world
+Used by companies for serious, large-scale applications (mention recognizable names if helpful — e.g., Instagram, Spotify use it)
+Known for being reliable, standards-compliant, and free forever (no licensing cost)
+
+Why PostgreSQL for this course?
+
+Free and open-source
+Industry-relevant (real companies use it — good resume/skill value)
+Uses standard SQL, so what students learn transfers to other databases (MySQL, SQL Server, etc.)
