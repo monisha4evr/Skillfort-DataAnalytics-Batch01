@@ -1,0 +1,115 @@
+TOOLS USED
+
+Database: PostgreSQL
+Interface: pgAdmin / psql
+
+Step 1:
+-------
+    postgresql download -> first Link -> windows ->download the installer -> latest version -> download
+
+Step 2:
+--------
+    exe file -dcl -> Next -> default directory -> uncheck stack builder ->default directory -> 
+    password ->master123 ->next ->next-> untill end-> finish 
+
+3. Fundamentals, Download, Install, Create Server, database and table
+--------------------------------------------------------------------
+Step A: (CREATE SERVER)
+-----------------------
+search -> pgAdmin4 ->(connected local server in Default)-> Server->password(master123)-> savepassword
+
+if server not created 
+1.default -> Addnewserver-> Server Name ->
+
+(or)
+2. right_click->register-> server->
+
+General tab=> Name:skillfort
+connection tab=> host: localhost port: 5432 password: master123 ->savepassword -> save 
+
+Step B:(create Database)
+------------------------
+Click database -> it automatically create one Database(db_name:postgres) 
+Create new Database
+right click Database-> create -> database ->dbname->save 
+
+Step C: (Schemas-> Tables)
+Step 1: Tables(Rightclick) ->CREATE->Table
+General tab: Name:student 
+column Tab :((+) right top) Name:ID datatype:character(we can set length) etc
+(NOTE: Need to choose datatype wisely :
+Because=>
+first u define as integer  if u want to edit datatype,that time  option only shows regarting numbers datatype)
+
+(Data type need to Study)
+
+Step 2: TO EDIT Table (right click on created table)-> properties 
+(you cannot change different datatype at edit eg: u can do integer to other number format only not to char or string)
+
+Step 3: (LOAD Data)
+    table->rightclick->import/export => give file, options tab: header:True
+    To check -> rightclick -> view/edit -> All rows 
+
+To set Foreign key:
+    Constraints tab-> Foreign key -> Name: student_fk
+    Columns tab: 
+    1. Local column (curent table column name)
+    2. References (main table)
+    3. Referencing (Referening column - Primary key column) 
+    then add 
+
+---------------------------------------------
+To show table details
+---------------------
+psql terminal 
+
+\d students (show student tables)
+
+query Editor:
+SELECT column_name, data_type
+FROM information_schema.columns
+WHERE table_name = 'table_name';
+
+
+To show all tables in database:
+-------------------------------
+\dt (list all tables)
+query editor: 
+    SELECT table_name
+    FROM information_schema.tables
+    WHERE table_schema = 'public';
+
+CREATE TABLE customer (
+    customer_id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INTEGER,
+    course VARCHAR(100),
+    address VARCHAR(200),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    active BOOLEAN DEFAULT TRUE,
+    status VARCHAR(20) DEFAULT 'ACTIVE'
+);
+
+
+CREATE TABLE students (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INTEGER,
+    course VARCHAR(100),
+    address VARCHAR(200),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    active BOOLEAN DEFAULT TRUE,
+    status VARCHAR(20) DEFAULT 'ACTIVE'
+);
+
+
+ALTER TABLE public.studetns
+RENAME TO students;
+
+
+INSERT INTO students (name, age, course, address)
+VALUES
+('Ragul', 27, 'Data Engineering', 'Chennai'),
+('Arun', 25, 'Python', 'Bangalore'),
+('Kumar', 24, 'AWS', 'Hyderabad'),
+('Priya', 23, 'SQL', 'Chennai');
