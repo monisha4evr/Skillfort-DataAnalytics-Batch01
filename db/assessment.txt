@@ -1,0 +1,52 @@
+sql create table Products with columns mentioned below
+
+    Product_id,   (Prd001)
+    Product_name,
+    Category,
+    Price,
+    Stock,
+    Brand
+
+INSERT – 10 Questions
+1. Insert a product named Laptop with category Electronics, price 55000, stock 10, and brand Dell.
+2. Insert a product named Mobile Phone with category Electronics, price 25000, stock 20, and brand Samsung.
+3. Insert 3 products using a single INSERT query.
+4. Insert a product by providing only product_id and product_name.
+5. Insert a Headphones product with price 1500 and stock 50.
+6. Insert any product under the Clothing category.
+7. Insert a product with stock = 0.
+8. Insert a Shoes product with brand Nike.
+9. Insert an Electronics product with price greater than 10000.
+10.Create a table based on csv file Shared in watsapp.
+11.import one csv file shared in watsapp .
+
+RETRIEVAL 
+WHERE & Comparison Operators 
+12. Retrieve all products where the price is greater than 10000.
+13. Retrieve products where the stock is less than 10.
+14. Retrieve products where the price is equal to 5000.
+15. Retrieve products where the price is not equal to 5000.
+16. Retrieve products where the price is greater than or equal to 20000.
+
+Logical Operators
+17. Retrieve products where the category is Electronics AND price is greater than 20000.
+18. Retrieve products where the category is Electronics OR Clothing.
+19. Retrieve products where the price is greater than 10000 AND stock is greater than 5.
+20. Retrieve products where the brand is Nike OR Adidas.
+21. Retrieve products where the price is between 1000 and 10000 using logical operators.
+
+ORDER BY
+22. Retrieve all products and sort them by price from lowest to highest.
+23. Retrieve all products and sort them by price from highest to lowest.
+24. Retrieve products and sort them by stock in descending order.
+
+LIMIT & OFFSET
+25. Retrieve the first 5 products.
+26. Retrieve the 5 most expensive products.
+27. Retrieve 5 products after skipping the first 10 products.
+
+Wildcard / Pattern Matching
+28. Retrieve products whose product_name starts with 'S'.
+29. Retrieve products whose product_name ends with 'e'.
+30. Retrieve products whose product_name contains 'phone'.
+31. Retrieve products whose brand starts with 'A' or 'S'.
