@@ -1,0 +1,108 @@
+employees(   
+ emp_id,    emp_name,    department,    salary,    experience,    city,    age,    performance,    joining_date
+)
+Questions
+1. Display the names and salaries of employees who earn more than the average salary of 50000 and have at least 3 years of experience.
+2. Find employees who work in IT, Finance, or Data Analytics, but exclude employees from Chennai.
+3. Display employees whose salary is between 40000 and 80000, but exclude those whose performance is between 70 and 80.
+4. Find employees whose name starts with A or S and whose salary is greater than 45000.
+5. Find employees who are not from Chennai or Bangalore and have more than 2 years of experience.
+6. Display employees whose department is IT and whose salary is either below 40000 or above 70000.
+7. Find employees whose name contains the letter a, whose age is between 25 and 35, and whose performance is at least 80.
+8. Display employees whose city is in ('Chennai', 'Mumbai', 'Delhi') but whose department is not Finance.
+9. Find employees whose salary is greater than 60000 OR whose performance is greater than 90, but they must have at least 2 years of experience.
+10. Display employees whose name ends with n and whose salary is between 35000 and 65000.
+11. Find employees who belong to IT or HR, have experience between 2 and 6 years, and are not from Mumbai.
+12. Display employees whose performance is below 60 or above 90, and whose salary is greater than 40000.
+
+13. Find employees whose name has at least one occurrence of the letter a and whose city is not Chennai.
+PostgreSQL-specific: use an appropriate case-insensitive pattern operator.
+
+14. Find employees where salary is greater than 50000 and either:
+performance is greater than 85, or
+experience is greater than 5.
+
+15. 
+Find employees who satisfy all of the following:
+Department is IT or Data Analytics
+Salary is between 45000 and 90000
+Experience is at least 3
+City is not Chennai
+Performance is either greater than 85 or less than 60
+Name should not start with R
+
+
+orders
+(
+    order_id,
+    customer_name,
+    product_name,
+    category,
+    amount,
+    quantity,
+    city,
+    payment_method,
+    order_status,
+    order_date
+)
+
+Questions
+
+1. [3 Marks] – Multiple Filter Logic
+
+Find orders where:
+
+category is Electronics or Furniture
+amount is greater than 25000
+quantity is not 1
+order status is Delivered
+
+Display:
+
+order_id, customer_name, product_name, amount, quantity
+
+2. [3 Marks] – Pattern + Numeric Filter
+
+Find customers whose name contains an (case-insensitive) and whose order amount is between 10000 and 50000.
+
+Display:
+
+customer_name, product_name, amount, city
+
+3. [3 Marks] – Complex OR / AND
+
+Find orders satisfying either of these conditions:
+
+Electronics orders with amount greater than 60000
+Furniture orders with quantity greater than 3
+
+But exclude cancelled orders.
+
+Display:
+
+order_id, product_name, category, amount, quantity, order_status
+
+4. [3 Marks] – Date + Multiple Conditions
+
+Find orders placed during 2025, where:
+
+payment method is UPI or Credit Card
+amount is greater than 15000
+city is not Chennai
+
+Display:
+
+order_id, customer_name, amount, payment_method, order_date
+
+5. [3 Marks] 
+
+Find orders where:
+
+customer name does not start with A
+category is not Grocery
+amount is either below 10000 or above 50000
+order status is either Delivered or Shipped
+
+Display:
+
+order_id, customer_name, category, amount, order_status
