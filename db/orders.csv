@@ -1,0 +1,51 @@
+order_id,customer_name,product_name,category,amount,quantity,city,payment_method,order_status,order_date
+1,Ananya Sharma,Smart TV 55 inch,Electronics,48000,2,Bengaluru,UPI,Delivered,2025-03-15
+2,Rohan Verma,Ergonomic Office Chair,Furniture,28000,4,Mumbai,Credit Card,Delivered,2025-06-20
+3,Suresh Raina,Flagship OLED TV,Electronics,75000,1,Delhi,Net Banking,Shipped,2025-01-10
+4,Manoj Tiwari,Solid Wood Dining Table,Furniture,32000,4,Chennai,Debit Card,Delivered,2024-11-12
+5,Pooja Hegde,Gaming Laptop,Electronics,65000,1,Hyderabad,Credit Card,Delivered,2025-08-05
+6,Amitabh Roy,King Size Bed Frame,Furniture,42000,1,Kolkata,UPI,Cancelled,2025-04-18
+7,Sneha Mukherjee,Wireless Earbuds,Electronics,4500,1,Pune,UPI,Delivered,2025-02-14
+8,Vikram Singh,Organic Basmati Rice Bag,Grocery,2500,5,Jaipur,Cash on Delivery,Delivered,2025-07-22
+9,Daniel Craig,Espresso Coffee Machine,Appliances,18500,1,Bengaluru,Credit Card,Shipped,2025-09-09
+10,Kavita Anand,L-Shaped Sofa Set,Furniture,55000,2,Ahmedabad,UPI,Delivered,2025-05-30
+11,Rajesh Kumar,Mechanical Keyboard,Electronics,6500,2,Bengaluru,Debit Card,Delivered,2024-12-01
+12,Tanvi Sethi,Recliner Sofa,Furniture,34000,2,Mumbai,UPI,Delivered,2025-10-14
+13,Bhavana Pant,Ultrabook Laptop,Electronics,62000,2,Kolkata,Credit Card,Shipped,2025-11-25
+14,Chetan Bhagat,Bookshelf Wooden,Furniture,12000,5,Delhi,UPI,Delivered,2025-03-03
+15,Divya Mani,Kitchen Spice Rack Set,Grocery,1800,2,Chennai,UPI,Delivered,2025-01-18
+16,Farhan Akhtar,Curved Gaming Monitor,Electronics,27000,2,Mumbai,Credit Card,Delivered,2025-02-28
+17,Gautam Gambhir,Study Table Desk,Furniture,9500,4,Delhi,UPI,Delivered,2024-08-19
+18,Harish Kalyan,High-End Home Theater,Electronics,85000,1,Hyderabad,Credit Card,Delivered,2025-04-12
+19,Ishaan Khatter,Smartphone Pro Max,Electronics,89000,1,Bengaluru,Credit Card,Cancelled,2025-06-01
+20,Janani Mohan,Wardrobe 3-Door,Furniture,29000,2,Coimbatore,Debit Card,Delivered,2025-07-15
+21,Kunal Kapoor,Noise Cancelling Headphones,Electronics,22000,1,Jaipur,UPI,Shipped,2025-08-20
+22,Lata Mangeshkar,Standing Workstation Desk,Furniture,26000,3,Pune,Credit Card,Delivered,2025-05-11
+23,Manish Malhotra,Designer Bar Stools,Furniture,14000,4,Mumbai,Credit Card,Shipped,2025-09-03
+24,Naveen Polishetty,Drone Camera 4K,Electronics,64000,1,Hyderabad,UPI,Delivered,2025-12-05
+25,Omkar Nath,Refined Olive Oil Can,Grocery,3200,3,Lucknow,Cash on Delivery,Delivered,2025-02-17
+26,Pawan Kalyan,Smart Air Purifier,Appliances,16000,1,Visakhapatnam,UPI,Delivered,2025-03-22
+27,Qasim Khan,Leather Accent Armchair,Furniture,24000,1,Delhi,Net Banking,Delivered,2024-10-10
+28,Ranjith Kumar,Tablet 11-inch with Pen,Electronics,31000,2,Madurai,UPI,Delivered,2025-04-04
+29,Sanjana Sanghi,Microwave Oven Convection,Appliances,14500,1,Indore,Credit Card,Shipped,2025-11-11
+30,Tarun Mansukhani,Solid Teak Bedside Table,Furniture,8000,4,Bhopal,Debit Card,Delivered,2025-06-18
+31,Udit Narayan,Pro Mirrorless Camera,Electronics,92000,1,Mumbai,Credit Card,Delivered,2025-01-29
+32,Varun Dhawan,Premium Coffee Powder Tin,Grocery,1200,4,Delhi,UPI,Delivered,2025-05-08
+33,Waseem Akram,Outdoor Patio Dining Set,Furniture,38000,2,Kolkata,Net Banking,Cancelled,2025-07-07
+34,Xavier Dsouza,Bluetooth Soundbar,Electronics,13500,1,Goa,UPI,Delivered,2024-09-14
+35,Yash Gowda,Ergonomic Mesh Chair,Furniture,11000,5,Bengaluru,UPI,Shipped,2025-10-02
+36,Zoya Akhtar,Stainless Steel Refrigerator,Appliances,52000,1,Mumbai,Credit Card,Delivered,2025-12-19
+37,Anand Mahindra,Robotic Vacuum Cleaner,Appliances,28000,1,Pune,Credit Card,Delivered,2025-03-11
+38,Bindu Madhavi,DSLR Camera Kit,Electronics,61000,2,Hyderabad,UPI,Delivered,2025-02-05
+39,Chandan Roy,Wooden Shoe Cabinet,Furniture,7500,2,Patna,Cash on Delivery,Delivered,2024-12-25
+40,Deepika Padukone,Smart Fitness Watch,Electronics,26000,3,Bengaluru,Credit Card,Delivered,2025-08-14
+41,Ehsaan Noorani,Stackable Plastic Chairs,Furniture,6000,6,Mumbai,UPI,Shipped,2025-04-20
+42,Francis Fernandes,Whole Almonds Pack (1kg),Grocery,950,10,Goa,Debit Card,Delivered,2025-01-05
+43,Govind Namdev,Home Theater Projector,Electronics,67000,1,Nagpur,Net Banking,Shipped,2025-07-28
+44,Hemant Birje,Modular Kitchen Trolley,Furniture,19000,1,Surat,UPI,Delivered,2025-09-17
+45,Irfan Pathan,Smart Air Conditioner 1.5T,Appliances,41000,1,Vadodara,Credit Card,Delivered,2025-05-23
+46,Jitendra Joshi,"Curved OLED Monitor 34""",Electronics,63000,2,Pune,UPI,Delivered,2025-10-30
+47,Kalyan Ram,Modern Coffee Table Glass,Furniture,15000,4,Vijayawada,Credit Card,Delivered,2025-06-12
+48,Lakshman Rao,Protein Powder Jar (2kg),Grocery,4200,2,Chennai,UPI,Delivered,2025-11-09
+49,Mani Ratnam,Studio Monitor Speakers,Electronics,29000,2,Chennai,Credit Card,Delivered,2025-08-21
+50,Nandita Das,Handcrafted Wooden Swing,Furniture,31000,2,Bhubaneswar,UPI,Shipped,2025-03-09

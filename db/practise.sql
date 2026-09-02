@@ -1,0 +1,72 @@
+select name ,name|| '-' || city from students;
+select name,concat(name,' ',city) from students;
+select name , concat(name,' ','skillfort') from students;
+select name,concat(name||'('||city||')' ) from students;
+select name,concat_ws('-',name,city) from students;
+select format('Mr.%s',name) from students;
+select concat(name,'-',COALESCE(age,18)) from students where age is null;-- empty value
+select name,concat_ws('-',name,age) from students where age is null; -- skill null
+
+
+select name,city from students;
+
+select concat(name,'-',city) from students;
+select name || '-' || city from students;
+select name || '(' || city || ')' from students;
+select concat_ws('-',name,city) from students;
+select concat(name,'-',age) from students where age is null; -- consider as empty
+select concat_ws('-',name,COALESCE(age,20)) from students where age is null; -- skip null value
+select concat('Mr','.',name) from students;
+select format('%s %I',name,COALESCE(age,0)) from students;
+
+-- lower,upper,initcap
+select * from students where lower(city)='panruti';
+substring(column,start_position,total_count)
+select id,substring(id,1,2) from students;
+select id,substring(id,3) from students;
+
+select s.name,length(s.name) as name_length  from students s;
+select city,substring(city,length(city)-2) from students;
+
+select id, position('01' in id) from students; -- pattern Match
+select id,strpos(id,'S') from students;
+-- Trim
+select * from students where trim(name)='Swetha';
+select name,trim(name) as tname,ltrim(name),rtrim(name) from students order by id desc;
+-- PADDING
+select id,lpad(id,10,'0'),rpad(id,10,'0') from students;
+-- replace 
+select city,replace(city,'Pondicherry','Pondy') from students;
+-- reverese 
+select city,reverse(city) from students;
+
+
+select '5' , cast('5' as integer), cast ('5.3' as float);
+
+select * from public.order;
+
+select * from current_date;
+select * from current_time;
+select * from current_timestamp;
+select current_date as today,current_date-interval '5 days' as int_day;
+select current_date as today,current_date+interval '5 days' as int_day;
+select * from current_date today
+,extract(day from current_date) as date
+,extract(month from current_date) as month
+,extract(year from current_date) as year
+,extract(week from current_date) as week
+,extract(quarter from current_date) as quarter
+;
+
+select date_part('day', current_timestamp);
+select 15+10,(15-10) subtract,(15*10) as multiply;
+select 15-10;
+select 15*10;
+select round(15.0/10);
+select ceil(5.6);
+select floor(5.6);
+select '5' ,cast('5' as integer);
+
+--  Aggregation Function
+
+

@@ -1,0 +1,54 @@
+Aggregate and Group by 
+------------------------ 
+select * from payments ;
+select sum(paid) from payments;
+select avg(paid) from payments;
+select max(paid) from payments;
+select min(paid)from payments;
+
+select * from students;
+select count(name) from students; -- it doesnt count null value 
+
+-- Distinct :
+
+select distinct(city) from students;
+select count(distinct(city)) from students;
+
+
+-- how much student from Each city ?
+select * from students 
+select count(name) from students 
+select city,count(name) from students group by city 
+
+select * from payments;
+select course,sum(paid) from payments group by course;
+select course,sum(paid) as total from payments group by course order by total desc;
+
+-- no of course each student taken 
+select student,count(course) from payments group by student order by student (Give you duplicate)
+select student,count(distinct(course)) from payments group by student order by student (Give you duplicate)
+
+-- ena course evalo payment.
+
+select * from payments;
+
+select student,course,sum(paid) from payments group by students,course order by students;
+
+-- ena course evalo students.
+select course,student,sum(paid) from payments group by course,students order by students;
+
+-- HAVING 
+-- Identify the students enrolled for only one course 
+select * from payments;
+select students,count(distinct(course)) total from payments 
+group by student having count(distinct(course))<2;
+
+
+-- Identify the students enrolled for only one course on october 
+
+select student,count(distinct(course)) as total from payments 
+where extract(month from date)=10
+group by student 
+having count(distinct(course))<2
+order by student;
+
