@@ -69,4 +69,41 @@ select '5' ,cast('5' as integer);
 
 --  Aggregation Function
 
+select * from payments;
+select sum(paid) as tot_earning from payments;
+select min(paid) from payments;
+select max(paid) from payments;
+-- 1. january month total Earning 
+-- 2. January month total transaction
+
+select count(transaction_id) from payments;
+
+select * from students;
+-- Find total number of students in Students Table
+select count(distinct(city)) from students;
+
+
+SELECT count(id) from students;
+
+select city from students group by city order by city desc;
+select city,count(name) total_student from students group by city having count(name)>20 order by city desc;
+select * from payments;
+
+from / join 
+where
+group by 
+having 
+select 
+distinct
+order by 
+limit;
+
+select * from students;
+select * from courses;
+select * from payments;
+
+select * from students where id='22S001';
+select * from payments where student='22S001';
+select * from courses where id in('22C15','22C12');
+
 
