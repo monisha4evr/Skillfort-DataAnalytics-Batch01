@@ -106,4 +106,35 @@ select * from students where id='22S001';
 select * from payments where student='22S001';
 select * from courses where id in('22C15','22C12');
 
+-- Joins
+Cross Join 
+inner Join 
+left join
+right join
+full join 
+
+
+inner join (Both Table Matching Records)
+
+select p.transaction_id,s.name,s.area,p.paid,c.name,c.fee
+from payments p
+join students s
+on p.student = s.id
+join courses c
+on p.course = c.id 
+;
+
+select s.id,s.name,s.area,p.transaction_id,p.paid
+from payments p
+right join students s
+on p.student = s.id
+order by s.id desc ;
+
+select s.id,s.name,s.area,p.transaction_id,p.paid
+from students s
+left join payments p 
+on p.student = s.id
+order by s.id desc ;
+
+
 
