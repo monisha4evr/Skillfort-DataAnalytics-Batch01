@@ -1,0 +1,35 @@
+Basic JOIN
+
+1. Display the customer name and order ID for all customers who have placed an order.
+
+2. Display customer name, city, order date, and total amount for every order.
+
+3. Display all customers and their orders. Include customers who have not placed any order.
+
+4. Display all orders with customer name. Show only orders whose status is Delivered.
+
+5. Find the customers who have placed orders with a total amount greater than 5000.
+
+JOIN + Filtering
+
+6. Display customer name, email, order ID, and order amount for orders placed after 2026-01-01.
+
+7. Find customers from Chennai who have placed at least one order.
+
+8. Display customer name and order status for all orders that are Cancelled.
+
+9. Find customers whose order amount is between 2000 and 10000.
+
+10. Display customer name and total order amount for customers who have placed orders.
+
+JOIN + Aggregate
+
+11. Find the total amount spent by each customer. Display customer name and total spending.
+
+12. Find the number of orders placed by each customer. Display customer name and order count.
+
+13. Find customers who have placed more than 2 orders.
+
+14. Find the customer who has spent the highest total amount.
+
+15. Display each customer and their latest order date.
