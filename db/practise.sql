@@ -136,6 +136,34 @@ left join payments p
 on p.student = s.id
 order by s.id desc ;
 
+-- Subquery
+select count(*) from orders;
+select round(avg(total_amount)) from orders;
+select * from orders where total_amount>7804;
+select * from orders where total_amount > (select round(avg(total_amount)) from orders);
+
+select customer_id from orders group by customer_id having count(*)>1;
+select * from customers where customer_id in(select customer_id from orders group by customer_id having count(*)>1);
+select category,price from products;
+select * from products where (category,price) in (
+select category,price from products group by category,price having count(*)>1);
+
+select * from customers c where  exists (
+select 1 from orders o where  c.customer_id =o.customer_id
+)
+
+SELECT *
+FROM products p
+WHERE price < (
+    SELECT AVG(price)
+    FROM products p2
+    WHERE p2.category = p.category
+);
+SELECT 
+    product_name,
+    price,
+    (SELECT AVG(price) FROM products) AS average_price
+FROM products;
 
 
 

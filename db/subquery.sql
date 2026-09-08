@@ -38,5 +38,75 @@ all: Find products whose price is greater than all products in the Electronics c
 exists: Find customers who have placed at least one order.
 */
 
+select * from orders;
+select round(avg(total_amount)) from orders;
+select * from orders where total_amount > 7804;
+
+select * from orders where total_amount > (select round(avg(total_amount)) from orders);
+
+types:
+1. Based on Result 
+2. Based on Execution
+
+1. Based on Result 
+	- single row Subquery 
+	- multiple row Subquery 
+	- multiple Value Subquery 
+2. Based on Execution 
+	- Correlated 
+	- Non Correlated 
+
+- single row Subquery 
+Eg: select * from orders where total_amount > (
+select round(avg(total_amount)) 
+from orders);
+
+- multiple row Subquery 
+
+select customer_id from orders group by customer_id having count(*)>1 ;
+select * from customers where customer_id =10;
+select * from customers where customer_id =1;
+select * from customers where customer_id =5;
+
+select * from customers where customer_id in (
+select customer_id 
+from orders 
+group by customer_id 
+having count(*)>1 )
+
+select * from products where (category,price) in
+(select category,price 
+from products 
+group by category,price 
+having count(*)>1);
+
+
+-- Corelated 
+select * from customers ;
+select * from orders;
+
+select * from customers c where exists (
+select * from orders o where c.customer_id = o.customer_id
+)
+
+select clause (scalar)
+from clause (Derived/inline view)
+where clause (filtering purpose )
+
+select * from products;
+
+select avg(price) from products;
+select *,(select avg(price) from products) from products;
+
+-- Find the average order amount for each customer using a subquery in the FROM clause.
+SELECT customer_id,count(*) as totalorder, round(AVG(total_amount),2) AS avg_order_amount
+FROM (
+    SELECT customer_id, total_amount
+    FROM orders
+) AS order_data
+GROUP BY customer_id;
+
+
+
 
 
