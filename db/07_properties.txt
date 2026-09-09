@@ -1,0 +1,15 @@
+ACID -
+
+A - Atomicity -  All or nothing
+C - Consistency - (Follow the Rules and Constraints)
+I - Isolation -  Independent Transaction
+D - Durability - Permanent Even after server crashes.
+
+Normalisation
+ 1nf 
+ 2nf
+ 3nf
+
+OLTP -  Online Transaction Processing (insert/update/delete)- de
+
+OLAP -  online Analytical Processing (select)- Denormalization

@@ -107,6 +107,8 @@ FROM (
 GROUP BY customer_id;
 
 
+select customer_id,round(avg(total_amount)),count(*) from orders group by customer_id having count(*)>1;
+
 
 
 
