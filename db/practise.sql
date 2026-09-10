@@ -167,3 +167,79 @@ FROM products;
 
 
 
+----------------
+-- stored procedure is a collection of SQL and procedural statements saved on the database server that can be executed as a single unit.
+-- Functions can take input parameters, perform computational logic, and must always return a value 
+
+CRUD - Operation 
+C - Create
+R - Read 
+U - Update
+D - Delete
+
+update:
+update Tablename set column_name ='' where condition;
+
+select * from customers order by customer_id desc;
+update customers set state='Tamil Nadu' where state='TN';
+update customers set city='Navalur',age=25,status='Active' where customer_id=53;
+select * from customers where customer_id=53;
+
+select * from orders;
+select * from order_items where order_item_id=1;
+
+update order_items set quantity=quantity+3,unit_price=unit_price*2 where order_item_id=1;
+update order_items set unit_price=unit_price/2 where order_item_id=1;
+
+-- Delete
+select * from customers where customer_id=53;
+Syntax: delete from tablename where condition;
+delete from customers where customer_id=53;
+
+
+-- procedure 
+CREATE or REPLACE procedure procedure_name(parametername datatype)
+Language plpgsql 
+as $$
+BEGIN
+-- statement
+END;
+$$;
+
+CREATE or REPLACE procedure prd_cust_ins()
+Language plpgsql 
+as $$
+BEGIN
+	insert into customers values 
+	(53,'Customer_53','test','TN',22,'customer_23@gamil.com','Inactive');
+END;
+$$;
+
+call prd_cust_ins();
+
+
+drop procedure prd_cust_ins();
+
+CREATE or REPLACE procedure prd_cust_ins(c_id int)
+Language plpgsql 
+as $$
+BEGIN
+	insert into customers values 
+	(c_id,concat_ws('_','Customer',c_id),'test','TN',22,
+	concat('customer_',c_id,'@gamil.com'),'Inactive');
+END;
+$$;
+
+CREATE or REPLACE procedure prd_cust_ins1(c_id int)
+Language plpgsql 
+as $$
+BEGIN
+	insert into customers values 
+	(c_id,'Customer' || c_id,'test','TN',22,
+	concat('customer_',c_id,'@gamil.com'),'Inactive');
+END;
+$$;
+
+call prd_cust_ins(55);
+
+select * from customers order by customer_id desc;
