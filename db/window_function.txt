@@ -1,0 +1,16 @@
+PostgreSQL Window Functions – Interview Questions
+Find the highest-paid employee in each department.
+Find the top 5 highest-paid employees in each department.
+Find the salary rank of each employee within their department.
+Find the employee with the second-highest salary in the company.
+Find the employee with the second-highest salary in each department.
+Display each employee's salary along with the average salary of their department.
+Find employees whose salary is higher than their department's average salary.
+Display the highest and lowest salary of each department for every employee.
+Display the total salary of each department for every employee.
+Find each employee's percentage contribution to their department's total salary.
+Display each employee's salary and the previous employee's salary based on salary order.
+Find the difference between an employee's salary and the previous employee's salary.
+Find the first employee hired in each department.
+Find the latest order of each customer.
+Compare each customer's current order amount with their previous order amount and find the difference.
