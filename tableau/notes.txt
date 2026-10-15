@@ -1,0 +1,220 @@
+Step 1:
+excel workbook => pick the file => (it show sheats as different File) 
+=> right ---> view data 
+
+
+Step 2: 
+worksheet
+dashboard
+Story (insights ta comments /text)
+
+
+worksheet
+----------
+pages,
+filters,
+marks,
+Columns,
+Rows
+
+
+canvas
+-------
+
+1. Bar chart
+-------------
+
+1. Regionwise Sales: 
+Column : Region 
+rows: sum(sales)
+
+
+
+
+Show me to change (chart)
+
+
+2. Regionwise Sales: 
+Column : Region 
+rows: sum(sales) sum(profit)
+
+
+it show as split image 
+
+to change it into same
+step 1: 
+
+marks: make Line chart of(profit)
+Change Color
+
+Step 2:  (To merge)
+
+Rows dropdown => first image (Mark type) - don't choose any in 1st image
+Rows dropdown => Second image (Dual Axis)
+
+Step 3: 
+choose  bar to 1st chart  in marks 
+
+
+--------------------------
+
+2. Line Chart : 
+--------------
+
+change standard to Entire view 
+
+Sales - year (time Based )
+Time Based columns( Order date,ship date) 
+
+Standard to Entire view
+--------------
+chart1:
+column: order date 
+row: sales
+marks : region
+
+
+path: line type /Pattern 
+
+
+chart2:
+------
+column: order date ,quarter(order date)
+row: sales
+marks : Segment
+
+you can change monthwise/yearwise on columns 
+
+chart3:
+------
+column: year(order date) ,quarter(order date)
+row: sum(sales)
+marks : Segment
+
+
+---------------------------------------------
+3.Column Chat
+-----------
+
+col: subcategory
+row: sales,profit 
+
+marks: 
+1. All (change both )
+2. if u choose specific chart u change the color of clicked chart
+
+dual axis (change to scatter chart) (create Measures on its own)
+change both in to bar chart 
+
+Entire view 
+Change measure after pages
+
+f7 to presentation View 
+--------------------------------------
+
+4.pie chart 
+
+column : segment 
+rows : profit 
+change pie from show me 
+
+increase size => marks size 
+
+to show Label 
+drag profit to Label (T)
+drag segment to label (T)
+
+to show profit as Percentage 
+(T) - > quick table Calculation -> percent of total 
+
+---------------------------------
+5. Donut Chart 
+
+(no direct Donut) 
+we have to create 2 chart and merge 
+
+(Do 2 time below code )
+row -> arrow -> new calculation -> min(expresion) min(1)
+row -> arrow -> new calculation -> min(expresion) min(1)
+
+on the second chart -> dual axis (it create circle )
+
+choose ->all -> increase size from size 
+
+at first chart -> change to pie chart from automatic 
+
+now drag segment to color 
+
+go to second chart reduce size 
+change color to white
+
+At first chart 
+drag (sales in angle and label) 
+
+-------------------------------------------- 
+
+Create Dashboard 
+----------------
+in left already created charts list were listed 
+ drag the chart to the dashboard
+  entire view 
+
+  to change title -> objects -> title - (dashboard title)show
+
+remove sheet name by double click 
+
+to publish : 
+file -> save to tableu public -> login 
+
+--------------
+--------------
+calculation field 
+
+to find profit  with sales and purchase column 
+
+near to search 3rd option -> create calculation field 
+
+name :profit Ratio 
+sum(profit) /sum(sales) 
+
+
+example : 
+
+col: category 
+rows: sub category 
+text : profit ratio  
+
+
+click dropdown -> to change(format)   
+drag: profit ratio -> color
+marks => square 
+change color -> apply -> ok 
+
+-----------------------------------
+
+story 
+
+for insight 
+
+size : automatic
+drag sheet and add title (like comment based  on chart)
+check layout 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
